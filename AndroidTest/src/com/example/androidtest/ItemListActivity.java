@@ -3,6 +3,7 @@ package com.example.androidtest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 /**
  * An activity representing a list of Items. This activity has different
@@ -32,7 +33,7 @@ public class ItemListActivity extends FragmentActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_item_list);
-
+Log.d("Debug","In OnCreate()");
 		if (findViewById(R.id.item_detail_container) != null) {
 			// The detail container view will be present only in the
 			// large-screen layouts (res/values-large and
